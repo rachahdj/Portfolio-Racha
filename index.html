@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Racha</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!-- Liens vers les feuilles de style et les bibliothèques externes -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css"> <!-- Votre fichier CSS personnalisé -->
+</head>
+<body>
+
+  <!-- Conteneur principal -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Barre latérale -->
+      <aside class="col-md-3 sidebar bg-dark text-light py-4 d-flex flex-column align-items-center">
+        <!-- Profil de l'utilisateur -->
+        <div class="profile text-center">
+          <img src="./assets/images/racha.jpeg" alt="Racha HADJADJ" class="avatar">
+          <h2 class="name">Racha HADJADJ</h2>
+          <p class="title">Designer UI</p>
+        </div>
+        <!-- Bouton "Voir plus" pour les petits écrans -->
+        <div class="d-md-none w-100">
+          <button id="toggleSidebar" class="btn btn-gold btn-block mt-3">Voir plus</button>
+        </div>
+        <!-- Liens sociaux et informations supplémentaires -->
+        <div class="d-none d-md-block w-100">
+          <nav class="social-links">
+            <!-- Liens sociaux -->
+            <a href="mailto:rachad@example.com" class="social-link email">racha.hadjadj23@icloud.com</a>
+            <a href="tel:+12133522795" class="social-link phone">+33 6 63 23 41 93</a>
+            <p>Ile de France, FRANCE</p>
+            <!-- Icônes sociales -->
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </nav>
+        </div>
+        <!-- Contenu supplémentaire masqué par défaut -->
+        <div class="additional-content d-none" id="additionalContent">
+          <!-- Informations supplémentaires -->
+          <nav class="social-links">
+            <a href="mailto:rachad@example.com" class="social-link email">racha.hadjadj23@icloud.com</a>
+            <a href="tel:+33663234193" class="social-link phone">+33 6 63 23 41 93</a>
+            <p class="social-link birthday">Mai 23, 2005</p>
+            <p class="social-link location">Ile de France, FRANCE</p>
+            <!-- Icônes sociales -->
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Contenu principal -->
+      <main class="col-md-9 content py-4">
+        <!-- Onglets de navigation -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">À propos de moi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="doing-tab" data-toggle="tab" href="#doing" role="tab" aria-controls="doing" aria-selected="false">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="testimonials-tab" data-toggle="tab" href="#testimonials" role="tab" aria-controls="testimonials" aria-selected="false">Témoignages</a>
+          </li>
+        </ul>
+        <!-- Contenu des onglets -->
+        <div class="tab-content" id="myTabContent">
+          <!-- Onglet "À propos de moi" -->
+          <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Titre de la section "À propos de moi" -->
+                    <h2 class="section-title">À propos de moi<span class="accent-line"></span></h2>
+                    <!-- Texte de la section "À propos de moi" -->
+                    <p class="section-text">Je suis une conceptrice designer UI passionnée avec une expérience dans la création de flyers, de cartes de visite, de sites vitrines et dans la gestion de l'image d'un restaurant. Ma passion pour le design et ma créativité m'ont permis de développer des compétences solides dans la conception graphique et l'expérience utilisateur.</p>
+                    <p class="section-text">Mon parcours professionnel m'a amenée à travailler étroitement avec des restaurants pour créer des designs accrocheurs et fonctionnels qui reflètent leur identité visuelle et leur marque. Que ce soit pour la conception de menus, la création de pages Instagram attrayantes ou la réalisation de publicités par le biais de flyers, je suis spécialisée dans la mise en valeur des offres culinaires et de l'ambiance unique de chaque établissement.</p>
+                    <p class="section-text">Je suis constamment à l'affût des dernières tendances en matière de design et des meilleures pratiques de l'industrie, ce qui me permet de proposer des solutions innovantes et modernes pour promouvoir l'image et les offres d'un restaurant. Mon objectif est de créer des designs qui captivent l'attention, inspirent la confiance et incitent les clients à découvrir les délices culinaires proposés.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Titre de la section "À propos de moi" -->
+                    <h2 class="section-title">Mes compétences<span class="accent-line"></span></h2>
+                    <!-- Case compétences -->
+                    <div class="competence-container">
+                      <!-- Logo de compétence -->
+                      <div class="competence">
+                        <img src="assets/images/wordpress.png" alt="wordpress">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/ai.webp" alt="ai">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/photoshop (1).png" alt="ps">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/pr.png" alt="pr">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/canva.png" alt="canva">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/figma.svg" alt="figma">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/html.png" alt="html">
+                      </div>
+                      <div class="competence">
+                        <img src="assets/images/css.png" alt="css">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- Formations -->
+          <div class="tab-pane fade" id="doing" role="tabpanel" aria-labelledby="doing-tab">
+            <!-- Contenu de la section "formation" -->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Case compétences -->
+                    <div class="experience row">
+                      <div class="col-auto">
+                        <div class="date">2024</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Licence de Designer UI</div>
+                      </div>
+                    </div>
+                    <div class="experience row">
+                      <div class="col-auto">
+                        <div class="date">2023</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Baccalauréat Général, spécialité SVT et SES</div>
+                      </div>
+                    </div>
+                    <!-- Ajoutez d'autres expériences ici -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- experiences -->
+          <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <!-- Contenu de la section "Experience" -->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Case compétences -->
+                    <div class="experience row">
+                      <div class="col-auto">
+                        <div class="date">2024</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Conception d'un site vitrine sur WordPress, création de flyers et gestion des réseaux sociaux</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Dakota (restaurant), Nanterre 92000</div>
+                      </div>
+                    </div>
+                    <div class="experience row">
+                      <div class="col-auto">
+                        <div class="date">2023</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Conception de maquette de site web, de logo, ainsi que de carte de visite</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Zest de Charme (salon de beauté), Mamers 72600</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio -->
+          <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+            <div class="container">
+              <h2 style="text-decoration:underline;margin-bottom: 3%;">Dakota</h2>
+              <div class="row">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal1">
+                    <img src="assets/images/dakota1.png" class="img-fluid" alt="site WP">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal3">
+                    <img src="assets/images/insta1.png" class="img-fluid" alt="insta">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal2">
+                    <img style="width: 80%; height: auto;" src="assets/images/DAKOTA (4).png" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+                
+                <!-- Ajoutez d'autres images ici -->
+              </div>
+            </div>
+            <div class="container">
+              <h2 style="text-decoration:underline;margin-bottom: 3%;">Zest de Charme</h2>
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal4">
+                    <img src="assets/images/zc1.png" class="img-fluid" alt="site WP">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal5">
+                    <img src="assets/images/LogoZC.png" class="img-fluid" alt="insta">
+                  </a>
+                </div>
+
+                
+                <!-- Ajoutez d'autres images ici -->
+              </div>
+            </div>
+          
+            <!-- Modales pour chaque image -->
+            <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal1Label">Site WP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/dakota1.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/dakota2.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/dakota3.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal2Label">Flyer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/DAKOTA (4).png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal3Label">Page Instagram</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/insta1.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/insta2.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal4Label">Site Zest de Charme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/zc1.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/zc2.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/zc3.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/zc4.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/zc5.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/zc6.png" class="img-fluid" alt="Site Wordpress Dakota">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+                               
+          <div class="tab-pane fade" id="testimonials" role="tabpanel" aria-labelledby="testimonials-tab">
+            <div class="testimonial">
+                <img src="assets/images/avatar-4.png" alt="Photo témoignage 1">
+                <p class="temoignage">Dakota (Restaurant):<br>"Je suis extrêmement satisfait du travail accompli par Racha en termes de conception de site et de flyers, ainsi que de sa stratégie de marketing sur les réseaux sociaux. Sa créativité dans la conception et son engagement à promouvoir le restaurant via des vidéos TikTok et des publications Instagram ont vraiment propulsé notre visibilité. Grâce à son travail, le restaurant est devenu plus connu et notre clientèle s'est considérablement accrue. Je recommande vivement Racha pour son expertise en marketing digital et sa capacité à attirer de nouveaux clients."</p>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/avatar-2.png" alt="Photo témoignage 2">
+                <p class="temoignage">Zest de Charme (Salon de beauté):<br>"Je suis absolument ravi du travail accompli par Racha pour la conception du modèle de notre site web, de notre carte de visite et de notre logo. Son professionnalisme et son talent artistique ont vraiment donné vie à notre vision pour notre salon de beauté. Le modèle de site web est élégant et fonctionnel, parfaitement adapté à notre esthétique. La carte de visite et le logo captent parfaitement l'essence de notre marque. Grâce à son expertise, notre présence en ligne est désormais plus forte que jamais, et nous recevons régulièrement des éloges de la part de nos clients sur l'apparence de notre marque. Je recommande vivement Racha pour son travail exceptionnel et sa capacité à transformer une vision en réalité."</p>
+            </div>
+        </div>
+        
+        </div>
+      </main>
+      
+    </div>
+  </div>
+
+  <!-- Scripts JavaScript -->
+  <script>
+    // Sélectionner le bouton "Voir plus" et le contenu supplémentaire
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const additionalContent = document.getElementById('additionalContent');
+  
+    // Ajouter un gestionnaire d'événement au clic sur le bouton "Voir plus"
+    toggleBtn.addEventListener('click', function() {
+      // Basculer la classe pour afficher ou masquer le contenu supplémentaire
+      additionalContent.classList.toggle('d-none');
+      // Changer le texte du bouton en fonction de l'état de la sidebar
+      if (additionalContent.classList.contains('d-none')) {
+        toggleBtn.textContent = "Voir plus";
+      } else {
+        toggleBtn.textContent = "Voir moins";
+      }
+    });
+  </script>
+
+  <!-- Liens vers les bibliothèques JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/* Définition des variables CSS pour la couleur de fond sombre, du texte clair et de la couleur dorée */
+:root {
+  --dark-bg: #cde3e9;
+  --light-text: #f0f0f0; /* Blanc */
+  --accent-color: #edbf72; /* Doré */
+}
+
+/* Réinitialisation des marges et des rembourrages, utilisation de la police de caractères Poppins, 
+   définition de la couleur de fond et de la couleur du texte pour le corps et les éléments HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark-bg);
+  color: var(--light-text);
+}
+
+/* Style de la barre latérale */
+.sidebar {
+  background-color: #3f6e7b !important; /* Vert sapin */
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  box-sizing: border-box;
+  border-radius: 10px; /* Arrondir les coins */
+  border: 2px solid #edbf72; /* Couleur du contour */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrer le contenu verticalement */
+  align-items: center;
+  transition: width 0.3s; /* Animation de transition pour agrandir/réduire la sidebar */
+  overflow: hidden;
+}
+
+/* Style de la barre latérale lorsqu'elle est étendue */
+.sidebar.expanded {
+  width: 350px; /* Largeur augmentée lorsque la sidebar est étendue */
+}
+
+/* Style du bouton "Voir plus" */
+.btn-gold {
+  background-color: #edbf72; /* Couleur dorée */
+  color: #fff; /* Texte blanc */
+  border: none;
+}
+
+/* Style du bouton "Voir plus" au survol */
+.btn-gold:hover {
+  background-color: #edbf72; /* Couleur dorée plus claire au survol */
+}
+
+/* Style du profil (nom, photo, titre) */
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: var(--light-text);
+  margin-bottom: 5px;
+}
+
+.title {
+  margin-top: 10%;
+  color: var(--light-text);
+  font-weight: bold;
+}
+
+/* Style des liens sociaux dans la barre latérale */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-link {
+  color: #ddd;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #edbf72; /* Couleur dorée */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  color: #ddd;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icon:hover {
+  color: #edbf72; /* Couleur dorée */
+}
+
+/* Import de Bootstrap */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+/* Ajout de FontAwesome Icons */
+.fab {
+  cursor: pointer;
+}
+
+/* Style des onglets */
+.nav-tabs {
+  border: none;
+  background-color: var(--dark-bg); /* Couleur de fond */
+}
+
+.nav-link {
+  color: var(--light-text); /* Couleur du texte */
+  background-color: #3f6e7b; /* Couleur de fond des onglets */
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 10px 20px;
+  transition: color 0.3s; /* Animation de transition */
+}
+
+.nav-link.active {
+  background-color: #2c2c2c; /* Couleur de fond des onglets actifs */
+}
+
+/* Changement de couleur de l'écriture au survol */
+.nav-link:hover {
+  color: var(--accent-color); /* Couleur dorée */
+}
+
+/* Contenu des onglets */
+.tab-content {
+  background-color: #3f6e7b; /* Couleur de fond */
+  padding: 20px;
+  border: 2px solid #edbf72; /* Couleur du contour */
+  border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style de la section "À propos de moi" */
+.about-me {
+  padding: 20px;
+  background-color: #3f6e7b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.accent-line {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 300px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.section-text {
+  color: var(--light-text);
+}
+
+/* Style pour la compétence */
+.competence-container {
+  display: flex;
+  justify-content: center;
+}
+
+.competence {
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+  transition: transform 0.3s; /* Animation de transition pour le zoom */
+  width: 100px; /* Taille du conteneur */
+  height: 100px; /* Taille du conteneur */
+  overflow: hidden; /* Masquer le contenu dépassant */
+}
+
+.competence img {
+  width: 100%; /* Remplir le conteneur */
+  height: 100%; /* Remplir le conteneur */
+  object-fit: contain; /* Ajuster l'image tout en conservant son aspect */
+}
+
+/* Effet de zoom au survol */
+.competence:hover {
+  transform: scale(1.1);
+}
+
+.temoignage {
+  box-shadow: 0 60px 100px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+  transition: transform 0.3s; /* Animation de transition pour le zoom */
+  width: 100%; /* Taille du conteneur */
+  height: 100%; /* Taille du conteneur */
+  overflow: hidden; /* Masquer le contenu dépassant */
+}
+
+.temoignage:hover {
+  transform: scale(1.04);
+}
+
+/* frise */
+
+.experience {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Espacement entre les expériences */
+}
+
+.date {
+  width: 100px; /* Largeur fixe pour la date */
+  color: var(--accent-color);
+
+}
+
+.experience-description {
+  border-left: 2px solid var(--light-text); /* Ligne verticale */
+  padding-left: 25%; /* Espacement à gauche de la ligne */
+  flex: 1; /* Permet à la description de remplir l'espace restant */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query pour les petits écrans */
+@media (max-width: 767.98px) { /* Appliquer uniquement sur les écrans jusqu'à la taille md */
+  .sidebar {
+    margin-left: auto; /* Met la sidebar à droite pour la centrer */
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Flex-direction en colonne pour les petits écrans */
+  .nav-tabs {
+    flex-direction: column;
+  }
+
+  /* Réglage des marges pour les éléments de la barre latérale sur les petits écrans */
+  .nav-item {
+    margin-right: 0; /* Supprime l'espacement entre les liens pour les petits écrans */
+    margin-bottom: 10px; /* Ajoute un espacement entre les liens pour les petits écrans */
+  }
+
+  .email {
+    margin-top: 10%;
+  }
+
+  .experience {
+    flex-direction: column;
+
+    display:inline;
+    align-items: none;
+    margin-bottom: 20px; /* Espacement entre les expériences */
+  }
+  
+  .date {
+    width: 10px; /* Largeur fixe pour la date */
+    font-weight: bold;
+    margin-left: 40%;
+  }
+  
+  .experience-description {
+    border-left: none; /* Ligne verticale */
+    padding-left: 2%; /* Espacement à gauche de la ligne */
+    padding-top: 5%;
+    flex: none; /* Permet à la description de remplir l'espace restant */
+  }
+
+  
+}
