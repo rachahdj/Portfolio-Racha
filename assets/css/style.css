@@ -272,25 +272,9 @@ body, html {
     margin-top: 10%;
   }
 
-  .experience {
-    flex-direction: column;
-
-    display:inline;
-    align-items: none;
-    margin-bottom: 20px; /* Espacement entre les expériences */
-  }
-  
-  .date {
-    width: 10px; /* Largeur fixe pour la date */
-    font-weight: bold;
-    margin-left: 40%;
-  }
   
   .experience-description {
-    border-left: none; /* Ligne verticale */
-    padding-left: 2%; /* Espacement à gauche de la ligne */
     padding-top: 5%;
-    flex: none; /* Permet à la description de remplir l'espace restant */
   }
 
   
